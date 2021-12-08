@@ -20,5 +20,7 @@ urlpatterns = [
     path('/', admin.site.urls),
     path('test',TemplateView.as_view(template_name='test.html')),
     path('sobre',TemplateView.as_view(template_name='sobre.html')),
+      path(r'^$',TemplateView.as_view(template_name='registar.html'))
+        path(r'^$',TemplateView.as_view(template_name='listagem.html'))
     path(r'^$',TemplateView.as_view(template_name='index.html'))
 ]
